@@ -15,4 +15,16 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:username, :email, :password, :password_confirmation, :current_password) }
   end
 
+  def current_score
+
+      @current_score = 10
+  end
+
+  def questions
+    @questions ||= Question.all
+  end
+
+  helper_method :current_score
+  helper_method :questions
+
 end

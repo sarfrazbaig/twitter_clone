@@ -2,22 +2,30 @@
   <div class ="col-xs-12">
     <div class="panel panel-default">
       <div class="panel-body">
-        <p>Question</p>
+        <p><%=@question.statement%></p>
       </div>
     </div>
   </div>
 </div>
 
+<div class="form-group">
+	<%= form_tag(home_path, method: "get") do %>
+	<%= text_field_tag :answer, params[:answer], placeholder: "Your Answer", class: 'form-control' %><br />
+	<span style="float:right;">
+	<%= submit_tag "Submit", class:'btn btn-primary' %>
+	</span>
+	<% end %>
+</div>
 <!--starting the second row-->
 <div class="row">
   <div class="col-xs-12">
     <div class="panel panel-default">
       <div class="panel-body">
-            <p>Trends</p>
       </div>
     </div>
   </div>
 </div>
+
 
 <div class="row">
   <div class="col-xs-12">
