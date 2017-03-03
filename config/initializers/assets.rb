@@ -22,6 +22,22 @@ Rails.application.config.assets.precompile += %w( scripts.js )
 Rails.application.config.assets.precompile += %w( odometer.js )
 
 
+
+Rails.application.config.assets.precompile += %w( triangle/bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( triangle/font-awesome.min.css )
+Rails.application.config.assets.precompile += %w( triangle/animate.min.css )
+Rails.application.config.assets.precompile += %w( triangle/lightbox.css )
+Rails.application.config.assets.precompile += %w( triangle/main.css )
+Rails.application.config.assets.precompile += %w( triangle/responsive.css )
+
+Rails.application.config.assets.precompile += %w( triangle/jquery.js )
+Rails.application.config.assets.precompile += %w( triangle/bootstrap.min.js )
+Rails.application.config.assets.precompile += %w( triangle/lightbox.min.js )
+Rails.application.config.assets.precompile += %w( triangle/wow.min.js )
+Rails.application.config.assets.precompile += %w( triangle/main.js )
+
+
+
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 
