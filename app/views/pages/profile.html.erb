@@ -1,44 +1,54 @@
-<!--one more row-->
-<div class = "row">
-  <div class="col-xs-12">
-    <div class="jumbotron">
-      <%= @username %>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>404 Error | Triangle</title>
+    <%=stylesheet_link_tag "triangle/main.css"%>
+    <%=stylesheet_link_tag "triangle/responsive.css"%>
+    <%=stylesheet_link_tag "triangle/bootstrap.min.css"%>
+    <%=stylesheet_link_tag "triangle/font-awesome.min.css"%>
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+    <section id="error-page">
+        <div class="error-page-inner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-center">
+                            <div class="bg-404">
+                                <div class="error-image">
+                                    <img class="img-responsive" src="images/404.png" alt="">
+                                </div>
+                            </div>
+                            <h2>Congratulations</h2>
+                            <p>You have successfully cleared Level <%=@question.id%></p>
+                            <a href="/home" class="btn btn-error">RETURN TO THE HOMEPAGE</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-<div class="row">
-  <div class ="col-xs-3">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <p>profile</p>
-      </div>
-    </div>
-  </div>
-  <div class ="col-xs-6">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <p>tweets</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-3">
-    <div class="panel panel-default">
-      <div class="panel-body">
-            <p>who to follow</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--starting the second row-->
-<div class="row">
-  <div class="col-xs-3 col-xs-offset-9">
-    <div class="panel panel-default">
-      <div class="panel-body">
-            <p>Trends</p>
-      </div>
-    </div>
-  </div>
-</div>
+    <%=javascript_include_tag "triangle/wow.min.js"%>
+    <%=javascript_include_tag "triangle/main.js"%>
+    <%=javascript_include_tag "triangle/jquery.js"%>
+    <%=javascript_include_tag "triangle/bootstrap.min.js"%>
+</body>
+</html>

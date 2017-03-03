@@ -1,279 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Mountain King - Bootstrap Template</title>
-        <!-- Bootstrap core CSS -->
-        <%=stylesheet_link_tag "theme.css"%>
-        <!-- Custom styles for this template -->
-        <%=stylesheet_link_tag "style.css"%>
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <%=stylesheet_link_tag "triangle/bootstrap.min.css"%>
+    <%=stylesheet_link_tag "triangle/font-awesome.min.css"%>
+    <%=stylesheet_link_tag "triangle/animate.min.css"%>
+    <%=stylesheet_link_tag "triangle/lightbox.css"%>
+	  <%=stylesheet_link_tag "triangle/main.css"%>
+	  <%=stylesheet_link_tag "triangle/responsive.css"%>
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
     <![endif]-->
-        <%=stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100'%>
-        <%=stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Raleway:300,700,900,500'%>
-        <%=stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css"%>
-        <%=stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"%>
-        <%=stylesheet_link_tag "pushy.css"%>
-        <%=stylesheet_link_tag "masonry.css"%>
-        <%=stylesheet_link_tag "animate.css"%>
-        <%=stylesheet_link_tag "magnific-popup.css"%>
-        <%=stylesheet_link_tag "odometer-theme-default.css"%>
-        <script>
-        window.odometerOptions = {
-          selector: '.odometer',
-          format: '(,ddd)', // Change how digit groups are formatted, and how many digits are shown after the decimal point
-          duration: 13000, // Change how long the javascript expects the CSS animation to take
-          theme: 'default'
-        };
-        </script>
-    </head>
-    <body class="">
-      <!-- Pushy Menu -->
-      <!-- Site Overlay -->
-      <div class="site-overlay"></div>
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
 
-        <header id="home">
-            <div class="container-fluid">
-                <!-- change the image in style.css to the class header .container-fluid [approximately row 50] -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-xs-10">
-                            <a href="#" class="thumbnail logo">
-                                <%=image_tag "your_logo.png", alt:"", class:"img-responsive"%>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="jumbotron">
-                        <h1><small>Happy Birthday!!</small></br>
-						<strong>SHILPA</strong></h1>
-                        <p>A big happy birthday to the best person we know<br>We wish you an amazing year ahead</p>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section id="feat">
+<body>
+	<header id="header">
+
+        <div class="navbar navbar-inverse" role="banner">
             <div class="container">
-                <div class="row features">
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="100ms">
-                        <span class="typcn typcn-pencil x3"></span>
-                        <h4>About</h4>
-                        <p>Born on 5 March 1996 to small family in Barrackpore, this girl showed signs of creativity right from her childhood. Her parents named her "Shilpa" which means "an ornament"</p>
-                    </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="300ms">
-                        <span class="typcn typcn-camera-outline x3"></span>
-                        <h4>Likes</h4>
-                        <p>This girl loves to draw and paint. We were quite impressed when we saw her work. Loves to sing, dance and live life to her fullest. She is always willing to help anyone in need. </p>
-                    </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="500ms">
-                        <span class="typcn typcn-bookmark x3"></span>
-                        <h4>Dislikes</h4>
-                        <p>"Hum ek baar jisse gussa ho jate h uska shakal bhi nahi dekhte.Ek baar papa daant diye they. Hum wahin khade rahe 4 ghante tak." Do whatever you want just don't make her angry</p>
-                    </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo"></h1>
+                    </a>
+
                 </div>
-            </div>
-        </section>
-        <section id="about" class="number wow fadeInUp" data-wow-delay="300ms">
-            <!-- change the image in style.css to the class .number .container-fluid [approximately row 102] -->
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 opaline col-md-offset-6">
-                            <div class="row">
-                                <div class="col-md-offset-1 col-md-10">
-                                    <h3>SARFRAZ BAIG</h3>
-                                    <h5>Tumhare Pyaar Mein Andha Aashiq</h5>
-                                    <p>I thank God for taking the time to create you. Must have taken years for him to complete someone like you. I pray to him to give you a long life so that we keep on playing 'puchu-chotu'. Happy Birthday jaan.</p>
-                                </div>
-                            </div>
-                            <div class="row text-center">
-                                <!-- set the numbers in assets/js/scripts.js  -->
-                                <div class="col-md-4 boxes col-xs-6 col-xs-offset-3 col-lg-4 col-lg-offset-1 col-md-offset-1 col-sm-6 wow fadeInUp">
-                                    <h5>Ultricies</h5>
-                                    <h3 class="odometer 01">00000</h3>
-                                </div>
-                                <div class="col-md-4 boxes col-xs-6 col-xs-offset-3 col-lg-4 col-lg-offset-2 col-md-offset-2 col-sm-6 wow fadeInUp" data-wow-delay="300ms">
-                                    <h5>Fermentum</h5>
-                                    <h3 class="odometer 02">00000</h3>
-                                </div>
-                            </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown"><a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="aboutus.html">About</a></li>
+                                <li><a href="aboutus2.html">About 2</a></li>
+                                <li><a href="service.html">Services</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="contact2.html">Contact us 2</a></li>
+                                <li><a href="404.html">404 error</a></li>
+                                <li><a href="coming-soon.html">Coming Soon</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="blog.html">Blog Default</a></li>
+                                <li><a href="blogtwo.html">Timeline Blog</a></li>
+                                <li><a href="blogone.html">2 Columns + Right Sidebar</a></li>
+                                <li><a href="blogthree.html">1 Column + Left Sidebar</a></li>
+                                <li><a href="blogfour.html">Blog Masonary</a></li>
+                                <li><a href="blogdetails.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="portfolio.html">Portfolio <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="portfolio.html">Portfolio Default</a></li>
+                                <li><a href="portfoliofour.html">Isotope 3 Columns + Right Sidebar</a></li>
+                                <li><a href="portfolioone.html">3 Columns + Right Sidebar</a></li>
+                                <li><a href="portfoliotwo.html">3 Columns + Left Sidebar</a></li>
+                                <li><a href="portfoliothree.html">2 Columns</a></li>
+                                <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="shortcodes.html ">Shortcodes</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <form role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
                         </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <section id="home-slider">
+        <div class="container">
+            <div class="row">
+                <div class="main-slider">
+                    <div class="slide-text">
+
+                            <h1>Happy Birthday Shilpa!!</h1>
+                            <p>Well the day has finally come. Jiska aap ko itni besabri se intezaar tha. Many many happy returns of the day. I know you were getting pretty bored lately. Well no more! We decided to make your birthday a lot fun than it used to be.</p>
+
+                    </div>
+
+                    <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
+                    <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
+                    <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
+                    <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
+                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
+                </div>
+            </div>
+        </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+    <!--/#home-slider-->
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="images/home/icon1.png" alt="">
+                        </div>
+                        <h2>About</h2>
+                        <p>Born on 5 March in a small town in Barrackpore, this girl showed signs of creativity right from her childhood. Her parents named her <i>"Shilpa"</i> which means <i>"an ornament</i>"</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="images/home/icon2.png" alt="">
+                        </div>
+                        <h2>Likes</h2>
+                        <p>This girl loves to draw and paint. The limit of her imagination is infinite. "<i>Hum do cheezon ko lete h phir unko jod ke kuch naya hi bana dete h</i>"</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="images/home/icon3.png" alt="">
+                        </div>
+                        <h2>Dislikes</h2>
+                        <p>"<i> Hum ek baar kisi se gussa ho jate h toh uska shakal bhi nahi dekhte. Ek baar bachpan mein papa humko daante they, toh hum 4 ghanta sofa mein hi baithe rhe"</i></p>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="news" class="blog wow fadeInUp" data-wow-delay="300ms">
-            <div class="container">
+        </div>
+    </section> -->
+    <!--/#services
+
+    <!-- <section id="action" class="responsive">
+        <div class="vertical-center">
+             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
-                        <h2>A bad year indeed !!</h2>
-                        <p> We know Shilpa this year has not started well for you. Though you had worked hard last semester you could not ace your final exam and got a supplementary.</p>
-                        <p>Then your health detoriated. You were too sick to do anyhting. But you stood strong against all this. You passed the exam with flying colors amidst all the sickness. This is just to remind you what a brave girl you are and the endurance you possess.</p>
-                        <p>But we believe that all that has passed. You have proved yourself. And if by chance you get a doubt about your ability, remember there are two cartoons who are always there for you. So what if the year has started badly. You are going to turn that around.</p>
-                    </div>
-                    <div class="col-md-5">
-                          <%=image_tag "P_20170219_192929_BF.jpg", alt:"" ,class:"img-responsive"%>
+                    <div class="action take-tour">
+                        <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <h1 class="title">Triangle Corporate Template</h1>
+                            <p>A responsive, retina-ready &amp; wide multipurpose template.</p>
+                        </div>
+                        <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="tour-button">
+                                <a href="#" class="btn btn-common">TAKE THE TOUR</a>
+                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="history" class="story wow fadeInUp" data-wow-delay="300ms">
-            <!-- change the image in style.css to the class .story .container-fluid [approximately row 141] -->
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 opaline">
-                            <div class="row">
-                                <div class="col-md-10 col-md-offset-1">
-                                    <p class="lead"><i>Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</i></p>
-                                    <p><i>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</i></p>
-                                    <h6 class="lead"> – Fermentum Dapibus</h6>
-                                    <p><small>Nibh Etiam Risus Bibendum<br>
-        Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
-                                </div>
+        </div>
+   </section> -->
+    <!--/#action-->
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="single-features">
+                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="images/home/image1.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Loves Cartoon</h2>
+                        <P>Well I don't get your sheer obsession with mickey and minnie mouse. But I totally adore the way your eyes shine when you hear their names. Maybe it was one of the reasons I added a cartoonish look to this page. Because we know how much you love them. Added a mickey and minnie mouse image to make you smile.</p>
+                    </div>
+                </div>
+                <div class="single-features">
+                    <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Absolutely hates studying</h2>
+                        <P>"Yaar yeh exams kyun aa jate h, humko nahi pasand exam. Baki logon ki tarah humse ratta nahi maara jata humein." That is totally not a problem. You were made for something else. Something bigger</P>
+                    </div>
+                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="images/home/image2.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="single-features">
+                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="images/home/image3.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Things we Adore</h2>
+                        <P>Shilpa : Sarfraz tumko pata h</P>
+                        <p>Sarfraz : Nahi mujhe nahi pata tum batayi hi nahi</p>
+                        <p>Shilpa : -_-</p>
+                        <p>I absolutely love the way you talk. And when you shake your head when you are singing a song</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--/#features-->
+
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
+                        <h1 class="title">Happy Birthday Again</h1>
+                        <p>I know you are getting bored and want to jump right into the interesting part. <br> But sabr ka fal meetha hota h chotu </p>
+                    </div>
+                    <!-- <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client1.png" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client2.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client3.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client4.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client5.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="images/home/client6.png" class="img-responsive" alt=""></a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+     </section>
+    <!--/#clients-->
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+                    <img src="images/home/under.png" class="img-responsive inline" alt="">
+                </div>
+                <h2>Wishes</h2>
+                <br>
+                <div class="col-md-4 col-sm-6">
+                    <div class="testimonial bottom">
+
+                        <div class="media">
+                            <div class="pull-left">
+                                <a href="#"><img src="images/home/profile1.png" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>Nisi commodo bresaola, leberkas venison eiusmod bacon occaecat labore tail.</blockquote>
+                                <h3><a href="#">- Jhon Kalis</a></h3>
+                            </div>
+                         </div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <a href="#"><img src="images/home/profile2.png" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
+                                <h3><a href="">- Abraham Josef</a></h3>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="photos" class="gallery wow fadeInUp" data-wow-delay="300ms">
-            <div class="container">
-                <div class="row">
-                    <div class="masonry image-gallery">
-                        <div class="grid-sizer"></div>
-                        <div class="gutter-sizer"></div>
-                        <div class="item item-width2">
-                            <a href="https://unsplash.it/1000/600?image=529">
-                              <img src="https://unsplash.it/600/300?image=529" alt="" />
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/1000/600?image=523">
-                              <img src="https://unsplash.it/320/776?image=523" alt="" />
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/600/1000?image=503">
-                              <img src="https://unsplash.it/500/800?image=503" alt="" />
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/1000/600?image=505">
-                              <img src="https://unsplash.it/400/400?image=505" alt="" />
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/800/800?image=454">
-                              <img src="https://unsplash.it/4403/2476?image=454" alt="" />
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/800/800?image=515">
-                              <img src="https://unsplash.it/585/439?image=515" alt="" />
-                            </a>
-                        </div>
-                        <div class="item item-width2">
-                            <a href="https://unsplash.it/1000/600?image=451">
-                              <img src="https://unsplash.it/600/140?image=451" alt="" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="clients wow fadeInUp" data-wow-delay="300ms">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2">
-                        <img src="images/logo-sample-01.jpg" class="img-responsive" />
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/logo-sample-02.jpg" class="img-responsive" />
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/logo-sample-03.png" class="img-responsive" />
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/logo-sample-04.jpg" class="img-responsive" />
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/logo-sample-05.jpg" class="img-responsive" />
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/logo-sample-06.png" class="img-responsive" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="prefooter wow fadeInUp" data-wow-delay="300ms">
-            <!-- change the image in style.css to the class .prefooter .container-fluid [approximately row 154] -->
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h3>Maecenas sed diam eget risus varius<br> blandit sit amet non magna.</h3>
-                            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                  <%=link_to '<button type="button" class="btn btn-danger">Go to treasure hunt</button> ' .html_safe,home_path %>
-                                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="testimonial bottom">
+                        <div class="media">
+                            <div class="pull-left">
+                                <a href="#"><img src="images/home/profile1.png" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>Nisi commodo bresaola, leberkas venison eiusmod bacon occaecat labore tail.</blockquote>
+                                <h3><a href="#">- Jhon Kalis</a></h3>
+                            </div>
+                         </div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <a href="#"><img src="images/home/profile2.png" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
+                                <h3><a href="">- Abraham Josef</a></h3>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h3>Your Logo</h3>
-                        <p>© 2016 Your Company. Designed and Developed by <a target="_blank" href="http://www.themeinthebox.com">ThemeintheBox.com</a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <p class="text-right social">
-	                        <a href="https://www.facebook.com/ThemeInTheBox/" target="_blank"><i class="typcn typcn-social-facebook-circular"></i></a>
-							<a href="https://twitter.com/ThemeintheBox" target="_blank"><i class="typcn typcn-social-twitter-circular"></i></a>
-							<i class="typcn typcn-social-tumbler-circular"></i>
-							<i class="typcn typcn-social-github-circular"></i>
-							<i class="typcn typcn-social-dribbble-circular"></i>
-						</p>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="testimonial bottom">
+                        <div class="media">
+                            <div class="pull-left">
+                                <a href="#"><img src="images/home/profile1.png" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>Nisi commodo bresaola, leberkas venison eiusmod bacon occaecat labore tail.</blockquote>
+                                <h3><a href="#">- Jhon Kalis</a></h3>
+                            </div>
+                         </div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <a href="#"><img src="images/home/profile2.png" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
+                                <h3><a href="">- Abraham Josef</a></h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-md-offset-5">
+                        <a href="/home" class="btn btn-common">Go to the treasure hunt</a>
+                </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <%=javascript_include_tag "jquery.min.js"%>
-        <%=javascript_include_tag "bootstrap.min.js"%>
-        <%=javascript_include_tag "https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap-scrollspy.js"%>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <%=javascript_include_tag "ie10-viewport-bug-workaround.js"%>
-        <%=javascript_include_tag "http://masonry.desandro.com/masonry.pkgd.js"%>
-        <%=javascript_include_tag "masonry.js"%>
-        <%=javascript_include_tag "pushy.min.js"%>
-        <%=javascript_include_tag "jquery.magnific-popup.min.js"%>
-        <%=javascript_include_tag "wow.min.js"%>
-        <%=javascript_include_tag "scripts.js"%>
-        <%=javascript_include_tag "odometer.js"%>
-    </body>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+    <%=javascript_include_tag "triangle/jquery.js"%>
+    <%=javascript_include_tag "triangle/bootstrap.min.js"%>
+    <%=javascript_include_tag "triangle/lightbox.min.js"%>
+    <%=javascript_include_tag "triangle/wow.min.js"%>
+    <%=javascript_include_tag "triangle/main.js"%>
+</body>
 </html>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-34344036-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
