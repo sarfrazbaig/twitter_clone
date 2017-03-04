@@ -31,7 +31,7 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand">
-                  <h1><img src="images/logo.png" alt="logo"></h1>
+                  <h1><img src="images/Logomakr_6gJ3Hu.png" alt="logo"></h1>
                 </a>
             </div>
             <div class="collapse navbar-collapse">
@@ -47,7 +47,9 @@
                     </li>
                     <li class="dropdown"><a>Hints <i class="fa fa-angle-down"></i></a>
                         <ul role="menu" class="sub-menu">
+                          <% if @question!=nil %>
                             <li><a><%=@question.hint%></a></li>
+                            <% end %>
                         </ul>
                     </li>
                     <li class="dropdown"><a>Score : <%=session[:score]%><i class="fa fa-angle-down"></i></a>
@@ -68,6 +70,7 @@
                     <div class="slide-text">
 
                           <div class="contact-form bottom">
+                            <% if @question!=nil %>
                               <h2><%=@question.statement%></h2>
                                <%= form_tag(home_path, method: "get") do %>
                                   <div class="form-group">
@@ -84,15 +87,16 @@
                     </div>
 
 
-                    <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
-                    <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
+                    <img src="<%=@question.image_url%>" class="slider-hill" alt="slider image">
+<% end %>
+                    <!-- <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
                     <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
                     <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
-                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
+                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image"> -->
                 </div>
             </div>
         </div>
-        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+        <!-- <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div> -->
     </section>
     <!--/#home-slider-->
 

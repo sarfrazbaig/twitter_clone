@@ -11,9 +11,9 @@ jQuery(function($) {'use strict';
 	});
 
 	//Fit Vids
-	if( $('#video-container').length ) {
-		$("#video-container").fitVids();
-	}
+	// if( $('#video-container').length ) {
+	// 	$("#video-container").fitVids();
+	// }
 
 	//Initiat WOW JS
 	new WOW().init();
@@ -50,7 +50,7 @@ jQuery(function($) {'use strict';
 
 	});
 
-	// 
+	//
 	// $('.timer').each(count);
 	// function count(options) {
 	// 	var $this = $(this);

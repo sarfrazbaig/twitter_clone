@@ -31,12 +31,12 @@
                         <div class="text-center">
                             <div class="bg-404">
                                 <div class="error-image">
-                                    <img class="img-responsive" src="images/404.png" alt="">
                                 </div>
                             </div>
-                            <h2>Congratulations</h2>
-                            <p>You have successfully cleared Level <%=@question.id%></p>
-                            <a href="/home" class="btn btn-error">RETURN TO THE HOMEPAGE</a>
+                            <h2>CONGRATULATIONS</h2>
+                            <p>You have successfully cleared Level <%=@question.id-1%></p>
+                            <p>You unlocked the letter : <%=@question.puzzle%></p>
+                            <a href="/home" class="btn btn-error">NEXT LEVEL</a>
 
                         </div>
                     </div>
