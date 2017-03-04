@@ -7,6 +7,9 @@ end
 
 gem 'bootstrap-sass', '~> 3.3.6'
 
+gem 'pg', group: :production
+gem 'rails_12factor'
+
 gem 'rails_admin'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
